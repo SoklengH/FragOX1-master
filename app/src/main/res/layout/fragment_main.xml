@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jettcalder.fragox1.MainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/main_frame"
+            android:layout_width="0dp"
+            android:layout_height="240dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/main_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Prev"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="@+id/main_page"
+            app:layout_constraintHorizontal_bias="0.045" />
+
+        <Button
+            android:id="@+id/main_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            app:layout_constraintLeft_toRightOf="@+id/main_prev"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintRight_toLeftOf="@+id/main_page"
+            android:layout_marginRight="8dp" />
+
+        <Button
+            android:id="@+id/main_goto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="16dp"
+            android:text="Goto"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/main_page"
+            android:layout_width="79dp"
+            android:layout_height="46dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Page: "
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/main_goto"
+            android:layout_marginRight="8dp" />
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>
